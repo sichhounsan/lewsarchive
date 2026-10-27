@@ -1,0 +1,542 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Lew's.Archive</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Wedding and commercial photography and film by Lewis, Phnom Penh, Cambodia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one long editorial page. Hairline rules, a left label column and a wide content column,
+   like the rate card. Portfolio is an uneven grid of catalogue frames. */
+:root{
+  --paper:#F2F2EF; --ink:#111110; --mute:#6F6F69; --rule:#C7C7C1;
+  --tile-a:#E3E3DE; --tile-b:#D6D6D0; --signal:#CF3F1B; --on-signal:#FFFFFF;
+  --sans:"Geist","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --mono:"Geist Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0F0F0E; --ink:#ECECE8; --mute:#8E8E87; --rule:#2F2F2C;
+    --tile-a:#1B1B19; --tile-b:#252522; --signal:#EA6A43; --on-signal:#120A07; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0F0F0E; --ink:#ECECE8; --mute:#8E8E87; --rule:#2F2F2C;
+  --tile-a:#1B1B19; --tile-b:#252522; --signal:#EA6A43; --on-signal:#120A07; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{
+  background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55;
+  font-weight:400;-webkit-font-smoothing:antialiased;
+  padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px));
+  padding-block:0 0;
+}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--paper)}
+a{color:inherit}
+.wrap{max-width:1180px;margin-inline:auto}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--mute);font-weight:400}
+:focus-visible{outline:2px solid var(--signal);outline-offset:3px}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--paper);border-bottom:1px solid var(--ink)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:56px}
+.brand{font-weight:500;font-size:14px;letter-spacing:.02em;text-decoration:none;white-space:nowrap}
+.nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0}
+.nav ul a{font-size:14px;text-decoration:none;color:var(--mute)}
+.nav ul a:hover{color:var(--ink)}
+.nav .cta{font-size:14px;text-decoration:none;border:1px solid var(--ink);padding:7px 14px;white-space:nowrap}
+.nav .cta:hover{background:var(--ink);color:var(--paper)}
+@media (max-width:760px){.nav ul{display:none}}
+
+/* hero */
+.hero{padding-block:clamp(56px,9vw,120px) 40px}
+.status{display:inline-flex;align-items:center;gap:10px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--signal)}
+h1{font-weight:400;font-size:clamp(46px,10.4vw,148px);line-height:.94;letter-spacing:-.045em;margin:28px 0 0;max-width:12ch;text-wrap:balance}
+.hero-foot{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:clamp(40px,6vw,80px);align-items:end}
+.hero-foot p{margin:0;max-width:44ch;font-size:18px;line-height:1.5}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
+.btn{display:inline-block;font:inherit;font-size:15px;text-decoration:none;padding:13px 22px;border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}
+.btn:hover{background:var(--ink);color:var(--paper)}
+.btn.solid{background:var(--ink);color:var(--paper)}
+.btn.solid:hover{background:transparent;color:var(--ink)}
+@media (max-width:760px){.hero-foot{grid-template-columns:1fr}.hero-actions{justify-content:flex-start}}
+.strip{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);display:flex;gap:12px 40px;flex-wrap:wrap;padding-block:14px;margin-top:8px}
+
+/* sections */
+section{border-top:1px solid var(--rule);padding-block:56px 72px}
+.hero + .strip + section{border-top:0}
+.grid2{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,8fr);gap:32px 48px}
+@media (max-width:860px){.grid2{grid-template-columns:1fr}}
+h2{font-weight:400;font-size:clamp(28px,3.6vw,40px);letter-spacing:-.025em;line-height:1.1;margin:0 0 10px}
+.side p{margin:0;max-width:28ch}
+h3{font-weight:500;font-size:17px;margin:0 0 4px;letter-spacing:-.005em}
+
+/* portfolio */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.chip{font:inherit;font-family:var(--mono);font-size:12px;letter-spacing:.04em;text-transform:uppercase;padding:7px 12px;border:1px solid var(--rule);background:transparent;color:var(--mute);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.frames{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:36px 20px}
+.frame{margin:0;min-width:0}
+.frame[hidden]{display:none}
+.frame.w7{grid-column:span 7}.frame.w5{grid-column:span 5}.frame.w4{grid-column:span 4}.frame.w6{grid-column:span 6}.frame.w8{grid-column:span 8}
+@media (max-width:760px){.frame[class*="w"]{grid-column:span 12}}
+.shot{position:relative;width:100%;background:linear-gradient(135deg,var(--tile-a),var(--tile-b));overflow:hidden}
+.shot.r45{aspect-ratio:4/5}.shot.r32{aspect-ratio:3/2}.shot.r11{aspect-ratio:1/1}.shot.r169{aspect-ratio:16/9}
+.shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.shot::before,.shot::after{content:"";position:absolute;width:14px;height:14px;border:1px solid var(--mute);opacity:.55}
+.shot::before{top:12px;left:12px;border-right:0;border-bottom:0}
+.shot::after{bottom:12px;right:12px;border-left:0;border-top:0}
+.shot .tc{position:absolute;left:30px;top:10px}
+.shot .empty{position:absolute;inset:0;display:grid;place-items:center}
+.frame figcaption{display:flex;justify-content:space-between;gap:16px;padding-top:10px;border-top:1px solid var(--rule);margin-top:10px}
+.frame figcaption b{font-weight:500}
+.frame figcaption span{color:var(--mute);font-size:14px}
+
+/* about */
+.about-body{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px 48px}
+@media (max-width:760px){.about-body{grid-template-columns:1fr}}
+.about-body p{margin:0 0 1em;max-width:58ch}
+.lead{font-size:clamp(20px,2.4vw,26px);line-height:1.35;letter-spacing:-.01em;margin:0 0 28px;max-width:30ch;text-wrap:balance}
+dl.facts{margin:0}
+dl.facts div{display:grid;grid-template-columns:120px 1fr;gap:12px;padding-block:10px;border-top:1px solid var(--rule)}
+dl.facts dt{margin:0}
+dl.facts dd{margin:0}
+
+/* packages */
+.pkgs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid var(--ink)}
+@media (max-width:900px){.pkgs{grid-template-columns:1fr}}
+.pkg{padding:24px 24px 28px 0;display:flex;flex-direction:column;gap:14px}
+.pkg + .pkg{padding-left:24px;border-left:1px solid var(--rule)}
+@media (max-width:900px){.pkg{padding:24px 0}.pkg + .pkg{padding-left:0;border-left:0;border-top:1px solid var(--rule)}}
+.price{font-size:44px;letter-spacing:-.035em;line-height:1;font-variant-numeric:tabular-nums}
+.price small{font-size:14px;color:var(--mute);letter-spacing:0;margin-left:4px}
+.pkg ul{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.pkg li{padding-block:8px;border-top:1px solid var(--rule);font-size:15px}
+.pkg .btn{margin-top:auto;align-self:flex-start}
+.tag{color:var(--signal)}
+.quick{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,5fr) auto;gap:20px 40px;align-items:center;border-top:1px solid var(--rule);border-bottom:1px solid var(--ink);padding-block:24px;margin-top:0}
+.quick ul{list-style:none;margin:0;padding:0}
+.quick li{padding-block:7px;border-top:1px solid var(--rule);font-size:15px}
+.quick li:first-child{border-top:0}
+.quick .price{margin-top:12px}
+@media (max-width:900px){.quick{grid-template-columns:1fr}}
+table.rates{width:100%;border-collapse:collapse;font-size:15px;font-variant-numeric:tabular-nums}
+table.rates td{padding:10px 0;border-top:1px solid var(--rule)}
+table.rates td:last-child{text-align:right;white-space:nowrap;padding-left:16px}
+table.rates tr:last-child td{border-bottom:1px solid var(--rule)}
+.rates-wrap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin-top:40px}
+@media (max-width:900px){.rates-wrap{grid-template-columns:1fr}}
+.rates-wrap h3{margin-bottom:10px}
+.note{color:var(--mute);font-size:14px;margin:18px 0 0;max-width:70ch}
+
+/* process */
+ol.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:20px;counter-reset:s}
+@media (max-width:900px){ol.steps{grid-template-columns:1fr}}
+ol.steps li{border-top:1px solid var(--ink);padding-top:12px;counter-increment:s}
+ol.steps li::before{content:counter(s,decimal-leading-zero);font-family:var(--mono);font-size:12px;color:var(--mute);display:block;margin-bottom:10px}
+ol.steps p{margin:4px 0 0;color:var(--mute);font-size:14px}
+
+/* faq */
+details{border-top:1px solid var(--rule);padding-block:16px}
+details:last-of-type{border-bottom:1px solid var(--rule)}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;font-size:17px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--mono);color:var(--mute)}
+details[open] summary::after{content:"\2212"}
+details p{margin:10px 0 0;max-width:62ch;color:var(--mute)}
+
+/* booking */
+.book{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:40px 56px}
+@media (max-width:900px){.book{grid-template-columns:1fr}}
+form{display:grid;grid-template-columns:1fr 1fr;gap:22px 24px}
+@media (max-width:560px){form{grid-template-columns:1fr}}
+.f{display:flex;flex-direction:column;gap:6px;min-width:0}
+.f.full{grid-column:1/-1}
+label{font-family:var(--mono);font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--mute)}
+input,select,textarea{font:inherit;font-size:16px;color:var(--ink);background:transparent;border:0;border-bottom:1px solid var(--ink);border-radius:0;padding:8px 0;width:100%;min-width:0}
+textarea{resize:vertical;min-height:84px}
+select{appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--ink) 50%),linear-gradient(135deg,var(--ink) 50%,transparent 50%);background-position:calc(100% - 12px) 50%,calc(100% - 7px) 50%;background-size:5px 5px,5px 5px;background-repeat:no-repeat;padding-right:24px}
+input::placeholder,textarea::placeholder{color:var(--mute);opacity:.7}
+.out{grid-column:1/-1;display:none;flex-direction:column;gap:12px}
+.out.on{display:flex}
+.out textarea{border:1px solid var(--rule);padding:12px;min-height:170px;font-size:15px}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.status-msg{color:var(--mute);font-size:14px}
+.contact dl{margin:0}
+.contact dl div{padding-block:14px;border-top:1px solid var(--rule);display:flex;justify-content:space-between;gap:16px;align-items:baseline;flex-wrap:wrap}
+.contact dl div:last-child{border-bottom:1px solid var(--rule)}
+.contact dt{margin:0}
+.contact dd{margin:0;display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+.copy{font:inherit;font-family:var(--mono);font-size:11px;letter-spacing:.04em;text-transform:uppercase;border:1px solid var(--rule);background:transparent;color:var(--mute);padding:3px 8px;cursor:pointer}
+.copy:hover{color:var(--ink);border-color:var(--ink)}
+
+footer{border-top:1px solid var(--ink);padding-block:28px 40px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="#top">LEW'S.ARCHIVE&copy;</a>
+    <ul>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#packages">Packages</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#faq">Questions</a></li>
+    </ul>
+    <a class="cta" href="#book">Book a date</a>
+  </div>
+</nav>
+
+<main class="wrap" id="top">
+  <header class="hero">
+    <p class="mono status"><span class="dot" aria-hidden="true"></span>Booking 2026 &ndash; 2027 &middot; Phnom Penh, Cambodia</p>
+    <h1>Archives of the days that matter.</h1>
+    <div class="hero-foot">
+      <p>Wedding and commercial photography and film by Lewis. One photographer and filmmaker who shows up, shoots the day, and keeps the work safe.</p>
+      <div class="hero-actions">
+        <a class="btn solid" href="#book">Book a date</a>
+        <a class="btn" href="#portfolio">See the archive</a>
+      </div>
+    </div>
+  </header>
+  <div class="strip mono">
+    <span>Weddings</span>
+    <span>Brand films and campaign stills</span>
+    <span>Phnom Penh, travelling on request</span>
+  </div>
+
+  <section id="portfolio" aria-labelledby="h-portfolio">
+    <div class="grid2">
+      <div class="side">
+        <h2 id="h-portfolio">Portfolio</h2>
+        <p class="mono">The archive, by volume</p>
+      </div>
+      <div>
+        <div class="filters" role="group" aria-label="Filter the archive">
+          <button class="chip" type="button" data-f="all" aria-pressed="true">All</button>
+          <button class="chip" type="button" data-f="wedding" aria-pressed="false">Weddings</button>
+          <button class="chip" type="button" data-f="commercial" aria-pressed="false">Commercial</button>
+        </div>
+        <!-- To add a photograph: put an <img src="..." alt="..."> inside .shot and remove the .empty block. -->
+        <div class="frames" id="frames">
+          <figure class="frame w7" data-cat="wedding">
+            <div class="shot r45"><span class="mono tc">Vol. 01</span><div class="empty mono">Frame to come</div></div>
+            <figcaption><b>Wedding</b><span>Cambodia &middot; 2026</span></figcaption>
+          </figure>
+          <figure class="frame w5" data-cat="wedding">
+            <div class="shot r45"><span class="mono tc">Vol. 02</span><div class="empty mono">Frame to come</div></div>
+            <figcaption><b>Couple portraits</b><span>Wedding &middot; Cambodia</span></figcaption>
+          </figure>
+          <figure class="frame w4" data-cat="wedding">
+            <div class="shot r11"><span class="mono tc">Vol. 03</span><div class="empty mono">Frame to come</div></div>
+            <figcaption><b>Wedding</b><span>Cambodia &middot; 2026</span></figcaption>
+          </figure>
+          <figure class="frame w8" data-cat="commercial">
+            <div class="shot r169"><span class="mono tc">Vol. 04</span><div class="empty mono">Frame to come</div></div>
+            <figcaption><b>Brand film</b><span>Commercial &middot; Cambodia</span></figcaption>
+          </figure>
+          <figure class="frame w6" data-cat="wedding">
+            <div class="shot r32"><span class="mono tc">Vol. 05</span><div class="empty mono">Frame to come</div></div>
+            <figcaption><b>Wedding</b><span>Cambodia &middot; 2026</span></figcaption>
+          </figure>
+          <figure class="frame w6" data-cat="commercial">
+            <div class="shot r32"><span class="mono tc">Vol. 06</span><div class="empty mono">Frame to come</div></div>
+            <figcaption><b>Campaign stills</b><span>Commercial &middot; Cambodia</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" aria-labelledby="h-about">
+    <div class="grid2">
+      <div class="side">
+        <h2 id="h-about">About</h2>
+        <p class="mono">Lewis, founder</p>
+      </div>
+      <div>
+        <p class="lead">I photograph and film the days people want to keep, and I build the archive around them.</p>
+        <div class="about-body">
+          <div>
+            <p>I'm Lewis, a creative director, photographer and filmmaker based in Phnom Penh. Lew's.Archive is my own practice: the person you message is the person who shoots your day.</p>
+            <p>I work on weddings and on commercial projects for brands, in Cambodia and abroad. When a day needs more hands, I bring a second shooter and an assistant I trust, and I direct the whole team myself.</p>
+            <p>Everything I deliver is treated as an archive: edited with care, labelled, and backed up for twelve months after delivery.</p>
+          </div>
+          <dl class="facts">
+            <div><dt class="mono">Based</dt><dd>Phnom Penh, Cambodia</dd></div>
+            <div><dt class="mono">Work</dt><dd>Weddings, brand films, campaign stills</dd></div>
+            <div><dt class="mono">Travel</dt><dd>Across Cambodia, and abroad on request</dd></div>
+            <div><dt class="mono">Crew</dt><dd>Lewis, plus a second shooter and an assistant when the day needs them</dd></div>
+            <div><dt class="mono">Contact</dt><dd>Lewis@lewsarchive.com</dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="packages" aria-labelledby="h-packages">
+    <div class="grid2">
+      <div class="side">
+        <h2 id="h-packages">Packages</h2>
+        <p class="mono">Prices in USD</p>
+      </div>
+      <div>
+        <div class="pkgs">
+          <article class="pkg">
+            <div><h3>I. Solo Archive</h3><span class="mono">Lewis + assistant</span></div>
+            <div class="price">$1,420</div>
+            <ul>
+              <li>Up to 10 hours of coverage</li>
+              <li>Photo and video kit</li>
+              <li>Edited photo gallery</li>
+              <li>Highlight film, 3&ndash;4 min</li>
+            </ul>
+            <button class="btn" type="button" data-pick="I. Solo Archive ($1,420)">Choose Solo</button>
+          </article>
+          <article class="pkg">
+            <div><h3>II. Duo Archive</h3><span class="mono tag">Most booked</span></div>
+            <div class="price">$2,170</div>
+            <ul>
+              <li>Lewis, a second shooter and an assistant</li>
+              <li>Up to 10 hours of coverage</li>
+              <li>Edited photo gallery</li>
+              <li>Cinematic film, 5&ndash;8 min, plus a 60-second teaser</li>
+            </ul>
+            <button class="btn solid" type="button" data-pick="II. Duo Archive ($2,170)">Choose Duo</button>
+          </article>
+          <article class="pkg">
+            <div><h3>III. Full Archive</h3><span class="mono">Lewis + 2 shooters + assistant</span></div>
+            <div class="price">$2,600</div>
+            <ul>
+              <li>Full team for the whole day</li>
+              <li>Full edited photo gallery</li>
+              <li>Feature film, 8&ndash;12 min, plus teaser and ceremony edit</li>
+              <li>Bundle saving of $420 built in</li>
+            </ul>
+            <button class="btn" type="button" data-pick="III. Full Archive ($2,600)">Choose Full</button>
+          </article>
+        </div>
+
+        <article class="quick">
+          <div>
+            <h3>Party Edit</h3>
+            <span class="mono">Parties and small events</span>
+            <div class="price">$450</div>
+          </div>
+          <ul>
+            <li>Lewis, solo, up to 3 hours</li>
+            <li>One photo camera and flash</li>
+            <li>Edited gallery in an editorial style</li>
+          </ul>
+          <button class="btn solid" type="button" data-pick="Party Edit ($450)" data-type="Party or small event">Book Party Edit</button>
+        </article>
+
+        <div class="rates-wrap">
+          <div>
+            <h3>Shooting</h3>
+            <table class="rates">
+              <tr><td>Lewis, full day (up to 10 hrs)</td><td>$450</td></tr>
+              <tr><td>Lewis, half day (up to 5 hrs)</td><td>$250</td></tr>
+              <tr><td>Extra shooter, per day</td><td>+$500</td></tr>
+              <tr><td>Assistant, per day</td><td>$120</td></tr>
+              <tr><td>Overtime, per hour</td><td>$60</td></tr>
+            </table>
+          </div>
+          <div>
+            <h3>Gear, per day</h3>
+            <table class="rates">
+              <tr><td>Photo kit</td><td>$200</td></tr>
+              <tr><td>Video kit</td><td>$250</td></tr>
+              <tr><td>Photo and video together</td><td>$400</td></tr>
+            </table>
+          </div>
+          <div>
+            <h3>Editing</h3>
+            <table class="rates">
+              <tr><td>Photo gallery, 300&ndash;500 images</td><td>$150&ndash;350</td></tr>
+              <tr><td>Highlight film</td><td>$300</td></tr>
+              <tr><td>Cinematic film + teaser</td><td>$450</td></tr>
+              <tr><td>Feature film + teaser</td><td>$700</td></tr>
+              <tr><td>Extra social reel</td><td>$80</td></tr>
+            </table>
+          </div>
+        </div>
+        <p class="note">Destination and international weddings start from $3,500 plus travel. Travel outside Phnom Penh is billed separately, with a $100 per day allowance. Rush delivery adds 25% of the total fee. Package prices are built from the lines above, so a custom day can be quoted to the dollar.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" aria-labelledby="h-process">
+    <div class="grid2">
+      <div class="side">
+        <h2 id="h-process">Process</h2>
+        <p class="mono">From first message to archive</p>
+      </div>
+      <ol class="steps">
+        <li><h3>Enquire</h3><p>Tell me the date, place and what you have in mind.</p></li>
+        <li><h3>Quote</h3><p>You receive a written quotation, valid for a set period.</p></li>
+        <li><h3>Sign</h3><p>Sign the service agreement and pay the 50% deposit to hold your date.</p></li>
+        <li><h3>Shoot</h3><p>I direct the day and the crew. You stay in the moment.</p></li>
+        <li><h3>Receive</h3><p>Photos in 3&ndash;4 weeks, films in 4&ndash;6. Balance due before delivery.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="faq" aria-labelledby="h-faq">
+    <div class="grid2">
+      <div class="side">
+        <h2 id="h-faq">Questions</h2>
+        <p class="mono">Terms in short</p>
+      </div>
+      <div>
+        <details><summary>How do I hold my date?</summary><p>Sign the service agreement and pay the 50% deposit. A date is not held until both are done.</p></details>
+        <details><summary>Can we move the date?</summary><p>Yes, once, at no charge and subject to availability. After that a fee may apply.</p></details>
+        <details><summary>What if I need to cancel?</summary><p>More than 30 days before the shoot, the deposit is refunded less any costs already spent. Within 30 days it is not refundable.</p></details>
+        <details><summary>When do I get my files?</summary><p>Photos within 3&ndash;4 weeks and films within 4&ndash;6 weeks of the event, as an online gallery or download link. Rush delivery is available.</p></details>
+        <details><summary>Can I use the photos for my business?</summary><p>Personal use, including sharing online with credit, is included. Commercial or advertising use is quoted separately.</p></details>
+        <details><summary>Do you travel?</summary><p>Yes. Travel outside Phnom Penh is billed separately, and destination weddings start from $3,500 plus travel.</p></details>
+        <details><summary>What if you cannot make it on the day?</summary><p>If illness or an emergency stops me, I will find a suitable replacement. If I cannot, every payment is refunded in full.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="book" aria-labelledby="h-book">
+    <div class="grid2">
+      <div class="side">
+        <h2 id="h-book">Book</h2>
+        <p class="mono">Start with a message</p>
+      </div>
+      <div class="book">
+        <form id="enquiry" novalidate>
+          <div class="f"><label for="name">Your name</label><input id="name" autocomplete="name" placeholder="Full name"></div>
+          <div class="f"><label for="contact">Phone or Instagram</label><input id="contact" placeholder="How should I reach you?"></div>
+          <div class="f"><label for="type">Event type</label>
+            <select id="type"><option>Wedding</option><option>Party or small event</option><option>Engagement or pre-wedding</option><option>Brand film or campaign</option><option>Other</option></select></div>
+          <div class="f"><label for="date">Date</label><input id="date" type="date"></div>
+          <div class="f"><label for="venue">Venue and city</label><input id="venue" placeholder="Where is it?"></div>
+          <div class="f"><label for="pkg">Package</label>
+            <select id="pkg"><option>Not sure yet</option><option>I. Solo Archive ($1,420)</option><option>II. Duo Archive ($2,170)</option><option>III. Full Archive ($2,600)</option><option>Party Edit ($450)</option><option>Custom quote</option></select></div>
+          <div class="f full"><label for="notes">Anything else?</label><textarea id="notes" placeholder="Guest count, schedule, style you like, extra crew"></textarea></div>
+          <div class="f full"><div class="row"><button class="btn solid" type="submit">Prepare my enquiry</button><span class="status-msg" id="hint">Fill in what you know. The rest can wait.</span></div></div>
+          <div class="out" id="out">
+            <label for="msg">Your enquiry</label>
+            <textarea id="msg" readonly></textarea>
+            <div class="row">
+              <button class="btn" type="button" id="copymsg">Copy message</button>
+              <a class="btn" href="https://www.instagram.com/lewsarchive.kh/" target="_blank" rel="noopener">Open Instagram</a>
+              <span class="status-msg" id="copystate" aria-live="polite"></span>
+            </div>
+            <p class="status-msg" style="margin:0">Send this by direct message on Instagram, by email or by phone. I reply personally.</p>
+          </div>
+        </form>
+        <aside class="contact" aria-label="Contact details">
+          <dl>
+            <div><dt class="mono">Email</dt><dd><span id="c-email">Lewis@lewsarchive.com</span><button class="copy" type="button" data-copy="Lewis@lewsarchive.com">Copy</button></dd></div>
+            <div><dt class="mono">Phone</dt><dd><span id="c-phone">+855 (0) 81 884 448</span><button class="copy" type="button" data-copy="+855 (0) 81 884 448">Copy</button></dd></div>
+            <div><dt class="mono">Instagram</dt><dd><a href="https://www.instagram.com/lewsarchive.kh/" target="_blank" rel="noopener">@lewsarchive.kh</a><button class="copy" type="button" data-copy="@lewsarchive.kh">Copy</button></dd></div>
+            <div><dt class="mono">Studio</dt><dd>Phnom Penh, Cambodia</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span class="brand">LEW'S.ARCHIVE&copy;</span>
+    <span class="mono">Photography &amp; film &middot; Phnom Penh, Cambodia</span>
+    <span class="mono" id="yr">2026</span>
+  </footer>
+</main>
+
+<script>
+(function(){
+  // portfolio filter
+  var chips=[].slice.call(document.querySelectorAll('.chip'));
+  var frames=[].slice.call(document.querySelectorAll('.frame'));
+  chips.forEach(function(ch){
+    ch.addEventListener('click',function(){
+      var f=ch.getAttribute('data-f');
+      chips.forEach(function(c){c.setAttribute('aria-pressed',c===ch?'true':'false')});
+      frames.forEach(function(fr){fr.hidden=!(f==='all'||fr.getAttribute('data-cat')===f)});
+    });
+  });
+
+  // choose a package -> booking form
+  [].slice.call(document.querySelectorAll('[data-pick]')).forEach(function(b){
+    b.addEventListener('click',function(){
+      var sel=document.getElementById('pkg');
+      sel.value=b.getAttribute('data-pick');
+      var t=b.getAttribute('data-type');
+      if(t){document.getElementById('type').value=t}
+      document.getElementById('book').scrollIntoView({behavior:'smooth'});
+      setTimeout(function(){try{document.getElementById('name').focus({preventScroll:true})}catch(e){}},400);
+    });
+  });
+
+  // copy helper with fallback
+  function copyText(text,done){
+    function fallback(){
+      var ta=document.createElement('textarea');ta.value=text;ta.setAttribute('readonly','');
+      ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();
+      var ok=false;try{ok=document.execCommand('copy')}catch(e){}
+      document.body.removeChild(ta);done(ok);
+    }
+    try{
+      if(navigator.clipboard&&navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(function(){done(true)},fallback);
+      }else{fallback()}
+    }catch(e){fallback()}
+  }
+  [].slice.call(document.querySelectorAll('.copy')).forEach(function(b){
+    b.addEventListener('click',function(){
+      copyText(b.getAttribute('data-copy'),function(ok){
+        var old=b.textContent;b.textContent=ok?'Copied':'Select text';
+        setTimeout(function(){b.textContent=old},1400);
+      });
+    });
+  });
+
+  // enquiry message
+  function fmt(d){
+    if(!d)return 'not decided yet';
+    var p=d.split('-');if(p.length!==3)return d;
+    var m=['January','February','March','April','May','June','July','August','September','October','November','December'];
+    return parseInt(p[2],10)+' '+m[parseInt(p[1],10)-1]+' '+p[0];
+  }
+  var form=document.getElementById('enquiry');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var v=function(id){return (document.getElementById(id).value||'').trim()};
+    var lines=[
+      "Hi Lewis, I'd like to book Lew's.Archive.",
+      "",
+      "Name: "+(v('name')||'-'),
+      "Reach me at: "+(v('contact')||'-'),
+      "Event: "+v('type'),
+      "Date: "+fmt(v('date')),
+      "Venue and city: "+(v('venue')||'-'),
+      "Package: "+v('pkg')
+    ];
+    if(v('notes'))lines.push("Notes: "+v('notes'));
+    lines.push("","Thank you!");
+    var msg=document.getElementById('msg');msg.value=lines.join("\n");
+    document.getElementById('out').classList.add('on');
+    document.getElementById('hint').textContent='Ready. Copy it below and send it.';
+    document.getElementById('copystate').textContent='';
+  });
+  document.getElementById('copymsg').addEventListener('click',function(){
+    var msg=document.getElementById('msg');
+    copyText(msg.value,function(ok){
+      if(!ok){msg.focus();msg.select()}
+      document.getElementById('copystate').textContent=ok?'Copied. Paste it into a message.':'Text selected. Copy it manually.';
+    });
+  });
+
+  document.getElementById('yr').textContent=String(new Date().getFullYear());
+})();
+</script>
+
+</body></html>
